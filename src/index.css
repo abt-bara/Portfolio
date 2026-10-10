@@ -122,16 +122,22 @@ body {
 
 .reveal {
   opacity: 0;
+  display:flex;
   transform: translateY(14px);
   transition:
     opacity 0.8s ease,
     transform 0.8s ease;
+  flex-direction: column;
 }
 .reveal.show {
   opacity: 1;
   transform: none;
+  
 }
-
+.center{
+  align-self: center;
+  justify-content: center;
+}
 /* ───────────── 4. HERO ───────────── */
 .hero {
   min-height: 100svh;

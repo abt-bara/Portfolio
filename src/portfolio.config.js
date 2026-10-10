@@ -24,7 +24,7 @@ const config = {
       Themes: "Mobile Development",
       preview: {
         type: "video",
-        src: "src/assets/videos/PJ-1.mp4",
+        src: "public/assets/videos/PJ-1.mp4",
       }, // optional: 'images/project-one.png' (file lives in /public/images)
       stack: {
         tools: ["git", "github", "vscode"], //          column 1: tools & platforms
@@ -40,9 +40,9 @@ const config = {
         "Another project. Keep descriptions to two or three sentences so the slide stays balanced.",
       preview: {
         type: "image",
-        src: "images/project-three.png",
+        src: "public/images/project-three.png",
       },
-      Themes: "Mobile Development, Ecommerce, Web Development, Ai integration",
+      Themes: "Mobile Development, Web Development, Ai integration",
       stack: {
         tools: ["git", "docker", "linux"],
         languages: ["python", "javascript"],
@@ -57,7 +57,7 @@ const config = {
         "A third project to show how the slide re-loads in place when you move through the carousel.",
       preview: {
         type: "image",
-        src: "images/project-three.png",
+        src: "public/images/project-three.png",
       },
       Themes: "Mobile Development",
       stack: {

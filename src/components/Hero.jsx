@@ -16,7 +16,7 @@ export default function Hero({ owner }) {
         <p className={`description reveal ${done ? 'show' : ''}`}>{owner.description}</p>
 
         <div className={`reveal ${done ? 'show' : ''}`}>
-          <a href="#projects" className="btn ">
+          <a href="#projects" className="btn center">
             {owner.buttonLabel ?? 'View projects'} <span aria-hidden="true">↓</span>
           </a>
         </div>

@@ -5,7 +5,7 @@ import IconStack from './IconStack'
 
 // Renders ONE project. It knows nothing about carousels: it just receives data.
 export default function ProjectSlide({ project }) {
-  const { name, github, description, preview, stack = {} } = project
+  const { name, github, description, preview, stack = {} ,Themes} = project
   const { type = {}, src = {} } = preview || {}
   const renderPreview = () => {
     const placeholder = (
@@ -45,9 +45,8 @@ export default function ProjectSlide({ project }) {
         {/* same "description" class as the hero = same style */}
         <p className="description">{description}</p>
         <h4 className="themes-title">Themes :</h4>
-        {(project.Themes) ? (project.Themes.split(', ').map((theme) =>
-          <p className="themes-description">{theme} &nbsp;</p>
-        )) : (<p></p>)}
+
+          <p className="themes-description">{Themes}</p>
 
         {/* the dev stack cuts column 1 into 3 columns */}
         <div className="stack">
