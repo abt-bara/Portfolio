@@ -9,7 +9,7 @@ const config = {
     name: "Muhammad Bara Harrath", // ★ typed out in the hero
     // ★ shown under the name
     description:
-      "\‟ A Practicing Muslim, A Hardworking Developer, An Ambitious Individual & a linux (fedora) User \‟ ",
+      "\‟ \‟ ",
     buttonLabel: "Take A Look At My Projects",
   },
 
