@@ -20,7 +20,8 @@ export default function ProjectSlide({ project }) {
       return src ? <video src={asset(src)} controls controlsList="nodownload" autoPlay={true} className='slide-video' loading="lazy" loop={true} muted={true} playsInline={true}
       /> : placeholder
     }
-
+  
+    
     if (type === 'image') {
 
 
