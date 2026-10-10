@@ -7,20 +7,23 @@ import IconStack from './IconStack'
 export default function ProjectSlide({ project }) {
   const { name, github, description, preview, stack = {} } = project
   const { type = {}, src = {} } = preview || {}
-
   const renderPreview = () => {
     const placeholder = (
       <div className="placeholder" aria-hidden="true">
         <span>{'{ }'}</span>
       </div>
     )
-
     if (type === 'video') {
-      return src ? <video src={asset(src)} controls controlslist="nodownload" autoPlay={true} className='slide-video' loading="lazy" loop={true} muted={true}
+      console.log('preview', preview, 'type', type)
+
+
+      return src ? <video src={asset(src)} controls controlsList="nodownload" autoPlay={true} className='slide-video' loading="lazy" loop={true} muted={true} playsInline={true}
       /> : placeholder
     }
 
     if (type === 'image') {
+
+
       return src ? <img src={asset(src)} /> : placeholder
     }
 

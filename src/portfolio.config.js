@@ -23,7 +23,7 @@ const config = {
         "A short, honest description: what it does, who it is for, and the one problem it solves well.",
       Themes: "Mobile Development",
       preview: {
-        Type: "video",
+        type: "video",
         src: "src/assets/videos/PJ-1.mp4",
       }, // optional: 'images/project-one.png' (file lives in /public/images)
       stack: {
@@ -39,7 +39,7 @@ const config = {
       description:
         "Another project. Keep descriptions to two or three sentences so the slide stays balanced.",
       preview: {
-        Type: "image",
+        type: "image",
         src: "images/project-three.png",
       },
       Themes: "Mobile Development, Ecommerce, Web Development, Ai integration",
@@ -56,7 +56,7 @@ const config = {
       description:
         "A third project to show how the slide re-loads in place when you move through the carousel.",
       preview: {
-        Type: "image",
+        type: "image",
         src: "images/project-three.png",
       },
       Themes: "Mobile Development",
