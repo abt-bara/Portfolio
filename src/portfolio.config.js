@@ -28,9 +28,18 @@ const config = {
         src: "assets/videos/PJ-1.mp4",
       }, // optional: 'images/project-one.png' (file lives in /public/images)
       stack: {
-        tools: ["git", "github", "vscode","supabase","eslint","swagger","node"], //          column 1: tools & platforms
-        languages: ["javascript", "html", "css","python","sql","typescript"], //    column 2
-        frameworks: ["react", "vite","fastapi","sqlalchemy","alembic"], //               column 3: libraries & frameworks
+        tools: [
+          "git",
+          "github",
+          "vscode",
+          "supabase",
+          "eslint",
+          "swagger",
+          "node",
+          "netlify"
+        ], //          column 1: tools & platforms
+        languages: ["javascript", "html", "css", "python", "postgresql", "typescript"], //    column 2
+        frameworks: ["react", "vite", "fastapi", "sqlalchemy", "alembic","reactrouter"], //               column 3: libraries & frameworks
       },
     },
     {
@@ -42,43 +51,43 @@ const config = {
       aiLabel: "Vibe Coded",
       preview: {
         type: "video",
-        src: "public/videos/PJ-2.png",
+        src: "assets/videos/PJ-2.mp4",
       },
       Themes: "Web development ",
       stack: {
         tools: ["git", "github", "vscode"],
-        languages: ["html", "javascript","css"],
-        frameworks: ["react"],
+        languages: ["html", "javascript", "css"],
+        frameworks: ["react","vite"],
       },
     },
     {
       id: "project-three",
-      name: "Project Three",
-      github: "https://github.com/your-username/project-three",
+      name: "TD — AI ",
+      github: "https://github.com/abt-bara/TD-AI",
       description:
-        "A third project to show how the slide re-loads in place when you move through the carousel.",
-      aiLabel: "No Ai",
+        "Typo Detection AI , helps detect typos in pdfs with full lnaguage support and multi-language documents",
+      aiLabel: "Vibe Coded",
       preview: {
-        type: "image",
-        src: "public/images/project-three.png",
+        type: "video",
+        src: "assets/videos/PJ-3.mp4",
       },
       Themes: "Mobile Development",
       stack: {
-        tools: ["git", "figma", "vercel"],
-        languages: ["typescript", "css"],
-        frameworks: ["react", "tailwind"],
+        tools: ["git", "github", "huggingface"],
+        languages: ["python"],
+        frameworks: ["Pytorch", "transformers","Pyqt"],
       },
     },
     {
       id: "project-four",
-      name: "Project Four",
+      name: "",
       github: "https://github.com/your-username/project-two",
       description:
         "Another project. Keep descriptions to two or three sentences so the slide stays balanced.",
       aiLabel: "Vibe Coded",
       preview: {
         type: "image",
-        src: "public/images/project-three.png",
+        src: "assets/images/PJ-3.jpg",
       },
       Themes: "Mobile Development, Web Development, Ai integration",
       stack: {
@@ -88,6 +97,57 @@ const config = {
       },
     },
   ],
+  skills: {
+    technical: [
+      {
+        name: "Web Development",
+        tools: [
+          { name: "React", icon: "react" },
+          { name: "Vite", icon: "vite" },
+        ],
+      },
+      {
+        name: "Prompt Engineering",
+        tools: [
+          { name: "Claude", icon: "claude" },
+          { name: "ChatGPT", icon: "openai" },
+        ],
+      },
+      {
+        name: "Back-End Developement",
+        tools: [
+          { name: "Claude", icon: "claude" },
+          { name: "ChatGPT", icon: "openai" },
+        ],
+      },
+      {
+        name: "Mobile Developement",
+        tools: [
+          { name: "Claude", icon: "claude" },
+          { name: "ChatGPT", icon: "openai" },
+        ],
+      },
+            {
+        name: "CI/CD",
+        tools: [
+          { name: "Github", icon: "claude" },
+          { name: "Netlify", icon: "openai" },
+        ],
+      },
+      {
+        name: "AI Training and Fine-Tuning",
+        tools:[
+          {name: "Jupyter"},{name:"Pytorch"},{name:"Colab"},{name:"Python"},{name:"transformers"}
+        ]
+      },
+      
+    ],
+    languages: [
+      { name: "English", level: "C1" },
+      { name: "Arabic", level: "Native" },
+      { name: "French", level: "B2" },
+    ],
+  },
 };
 
 export default config;
