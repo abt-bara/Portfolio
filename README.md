@@ -9,10 +9,11 @@ npm run build      # production build → dist/
 ```
 
 ## Change content
-- Name / description / button text → `owner` in `src/portfolio.config.js`
+- Name / description / hero button labels → `owner` in `src/portfolio.config.js`
+- Skill groups, tool icons, and language levels → `skills` in `src/portfolio.config.js`
 - Add a project → add one object to `projects` (the carousel and dots update themselves)
 - Project screenshot → put the file in `public/images/` and set `preview: 'images/your-file.png'`
-- New icon → add one line to `src/iconMap.js` (names: https://react-icons.github.io/react-icons)
+- New skill icon key → add an Iconify icon ID to `src/iconMap.js`
 
 ## Deploy (Netlify)
 1. Import this repository into Netlify.

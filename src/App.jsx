@@ -1,6 +1,7 @@
 import Background from './components/Background'
 import Hero from './components/Hero'
 import ProjectsCarousel from './components/ProjectsCarousel'
+import SkillSection from './components/SkillSection'
 import config from './portfolio.config'
 
 // App is the ONLY file that imports the config.
@@ -11,6 +12,7 @@ export default function App() {
       <Background />
       <main>
         <Hero owner={config.owner} />
+        <SkillSection skills={config.skills} />
         <ProjectsCarousel projects={config.projects} />
       </main>
     </>

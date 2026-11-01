@@ -11,6 +11,7 @@ const config = {
     description:
       "\‟ A Practicing Muslim, A Hardworking Developer, An Ambitious Individual & a linux (fedora) User \‟ ",
     buttonLabel: "Take A Look At My Projects",
+    skillsButtonLabel: "Explore skills",
   },
 
   projects: [
@@ -127,20 +128,23 @@ const config = {
           { name: "ChatGPT", icon: "openai" },
         ],
       },
-            {
+      {
         name: "CI/CD",
         tools: [
-          { name: "Github", icon: "claude" },
-          { name: "Netlify", icon: "openai" },
+          { name: "Github", icon: "github" },
+          { name: "Netlify", icon: "netlify" },
         ],
       },
       {
         name: "AI Training and Fine-Tuning",
-        tools:[
-          {name: "Jupyter"},{name:"Pytorch"},{name:"Colab"},{name:"Python"},{name:"transformers"}
-        ]
+        tools: [
+          { name: "Jupyter", icon: "jupyter" },
+          { name: "Pytorch", icon: "pytorch" },
+          { name: "Colab", icon: "colab" },
+          { name: "Python", icon: "python" },
+          { name: "transformers", icon: "huggingface" },
+        ],
       },
-      
     ],
     languages: [
       { name: "English", level: "C1" },
