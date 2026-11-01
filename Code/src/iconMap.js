@@ -96,7 +96,7 @@ export const ICONS = {
   hono: "logos:hono",
   django: "logos:django-icon",
   flask: "skill-icons:flask-dark",
-  fastapi: "logos:fastapi",
+  fastapi: "simple-icons:fastapi",
   spring: "logos:spring-icon",
   laravel: "logos:laravel",
   rails: "logos:rubyonrails",
@@ -132,7 +132,8 @@ export const ICONS = {
   planetscale: "logos:planetscale",
   prisma: "logos:prisma",
   drizzle: "devicon:drizzle",
-
+  sqlalchemy:"devicon:sqlalchemy",
+  alembic: "openmoji:alembic",
   // Cloud
   aws: "logos:aws",
   gcp: "logos:google-cloud",

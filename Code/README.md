@@ -9,14 +9,13 @@ npm run build      # production build → dist/
 ```
 
 ## Change content
-- Name / description / button text → `owner` in `src/portfolio.config.js`
+- Name / description / hero button labels → `owner` in `src/portfolio.config.js`
+- Skill groups, tool icons, and language levels → `skills` in `src/portfolio.config.js`
 - Add a project → add one object to `projects` (the carousel and dots update themselves)
 - Project screenshot → put the file in `public/images/` and set `preview: 'images/your-file.png'`
-- New icon → add one line to `src/iconMap.js` (names: https://react-icons.github.io/react-icons)
+- New skill icon key → add an Iconify icon ID to `src/iconMap.js`
 
-## Deploy (GitHub Pages)
-1. Push to a repo whose default branch is `main`.
-2. Settings → Pages → Source: **GitHub Actions**.
-3. Every push to `main` now builds and publishes automatically (`.github/workflows/deploy.yml`).
-
-`base: './'` in `vite.config.js` makes the build work for both `username.github.io` and `username.github.io/repo-name/`.
+## Deploy (Netlify)
+1. Import this repository into Netlify.
+2. Netlify reads the repository-root `netlify.toml` and builds the app from `Code/`.
+3. The build publishes `Code/dist/` and copies `Code/assets/` into the deployed `assets/` directory.

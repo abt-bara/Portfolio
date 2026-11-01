@@ -5,8 +5,14 @@ import IconStack from './IconStack'
 
 // Renders ONE project. It knows nothing about carousels: it just receives data.
 export default function ProjectSlide({ project }) {
-  const { name, github, description, preview, stack = {} ,Themes} = project
+  const { name, github, description, preview, stack = {} ,Themes, aiLabel} = project
   const { type = {}, src = {} } = preview || {}
+  const aiLabelClass = {
+    'AI assistance': 'ai-label-coded',
+    'Vibe Coded': 'ai-label-vibe',
+    'No Ai': 'ai-label-no-ai',
+  }[aiLabel] || ''
+
   const renderPreview = () => {
     const placeholder = (
       <div className="placeholder" aria-hidden="true">
@@ -58,7 +64,15 @@ export default function ProjectSlide({ project }) {
 
       {/* column 2 */}
       <div className="slide-preview">
-        {renderPreview()}
+        {aiLabel && (
+          <span className={`ai-label ${aiLabelClass}`}>
+            <span className="ai-label-dot" aria-hidden="true" />
+            {aiLabel}
+          </span>
+        )}
+        <div className="slide-media">
+          {renderPreview()}
+        </div>
       </div>
     </article>
   )
