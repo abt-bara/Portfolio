@@ -37,10 +37,24 @@ const config = {
           "eslint",
           "swagger",
           "node",
-          "netlify"
+          "netlify",
         ], //          column 1: tools & platforms
-        languages: ["javascript", "html", "css", "python", "postgresql", "typescript"], //    column 2
-        frameworks: ["react", "vite", "fastapi", "sqlalchemy", "alembic","reactrouter"], //               column 3: libraries & frameworks
+        languages: [
+          "javascript",
+          "html",
+          "css",
+          "python",
+          "postgresql",
+          "typescript",
+        ], //    column 2
+        frameworks: [
+          "react",
+          "vite",
+          "fastapi",
+          "sqlalchemy",
+          "alembic",
+          "reactrouter",
+        ], //               column 3: libraries & frameworks
       },
     },
     {
@@ -58,7 +72,7 @@ const config = {
       stack: {
         tools: ["git", "github", "vscode"],
         languages: ["html", "javascript", "css"],
-        frameworks: ["react","vite"],
+        frameworks: ["react", "vite"],
       },
     },
     {
@@ -76,7 +90,7 @@ const config = {
       stack: {
         tools: ["git", "github", "huggingface"],
         languages: ["python"],
-        frameworks: ["Pytorch", "transformers","Pyqt"],
+        frameworks: ["Pytorch", "transformers", "Pyqt"],
       },
     },
     {
@@ -124,8 +138,10 @@ const config = {
       {
         name: "Mobile Developement",
         tools: [
-          { name: "Claude", icon: "claude" },
-          { name: "ChatGPT", icon: "openai" },
+          { name: "flutter", icon: "flutter" },
+          { name: "java", icon: "java" },
+          { name: "XML", icon: "xml" },
+          { name: "Android Studio", icon: "android-studio" },
         ],
       },
       {

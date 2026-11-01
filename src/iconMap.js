@@ -190,7 +190,7 @@ export const ICONS = {
   claude: "simple-icons:claude",
   streamlit: "logos:streamlit",
   jupyter: "logos:jupyter",
-  colab: "logos:google-colab",
+  colab: "thesvg-color:colab-google",
   kaggle: "logos:kaggle",
   spark: "logos:apache-spark",
   airflow: "logos:apache-airflow",
@@ -201,3 +201,11 @@ export const ICONS = {
 };
 
 export const getIcon = (key) => ICONS[key] ?? ICONS.unknown;
+
+
+/*PROMPT : 
+
+fix all uncolored or the ones with text from iconify browse icons or docs
+make sure there is reactrouter,java,xml,xsd,
+
+*/
