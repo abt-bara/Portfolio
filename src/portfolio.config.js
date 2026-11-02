@@ -8,9 +8,8 @@ const config = {
   owner: {
     name: "Muhammad Bara Harrath", // ★ typed out in the hero
     // ★ shown under the name
-    description:
-      "\‟ A Practicing Muslim, A Hardworking Developer, An Ambitious Individual & a linux (fedora) User \‟ ",
-    buttonLabel: "Take A Look At My Projects",
+        buttonLabel: "Take A Look At My Projects",
+    skillsButtonLabel: "Explore skills",
   },
 
   projects: [
@@ -25,12 +24,35 @@ const config = {
       aiLabel: "AI assistance",
       preview: {
         type: "video",
-        src: "assets/videos/PJ-1.mp4",
+        src: "PJ-1.mp4",
       }, // optional: 'images/project-one.png' (file lives in /public/images)
       stack: {
-        tools: ["git", "github", "vscode","supabase","eslint","swagger","node"], //          column 1: tools & platforms
-        languages: ["javascript", "html", "css","python","sql","typescript"], //    column 2
-        frameworks: ["react", "vite","fastapi","sqlalchemy","alembic"], //               column 3: libraries & frameworks
+        tools: [
+          "git",
+          "github",
+          "vscode",
+          "supabase",
+          "eslint",
+          "swagger",
+          "node",
+          "netlify",
+        ], //          column 1: tools & platforms
+        languages: [
+          "javascript",
+          "html",
+          "css",
+          "python",
+          "postgresql",
+          "typescript",
+        ], //    column 2
+        frameworks: [
+          "react",
+          "vite",
+          "fastapi",
+          "sqlalchemy",
+          "alembic",
+          "reactRouter",
+        ], //               column 3: libraries & frameworks
       },
     },
     {
@@ -42,52 +64,96 @@ const config = {
       aiLabel: "Vibe Coded",
       preview: {
         type: "video",
-        src: "public/videos/PJ-2.png",
+        src: "PJ-2.mp4",
       },
       Themes: "Web development ",
       stack: {
         tools: ["git", "github", "vscode"],
-        languages: ["html", "javascript","css"],
-        frameworks: ["react"],
+        languages: ["html", "javascript", "css"],
+        frameworks: ["react", "vite"],
       },
     },
     {
       id: "project-three",
-      name: "Project Three",
-      github: "https://github.com/your-username/project-three",
+      name: "TD — AI ",
+      github: "https://github.com/abt-bara/TD-AI",
       description:
-        "A third project to show how the slide re-loads in place when you move through the carousel.",
-      aiLabel: "No Ai",
-      preview: {
-        type: "image",
-        src: "public/images/project-three.png",
-      },
-      Themes: "Mobile Development",
-      stack: {
-        tools: ["git", "figma", "vercel"],
-        languages: ["typescript", "css"],
-        frameworks: ["react", "tailwind"],
-      },
-    },
-    {
-      id: "project-four",
-      name: "Project Four",
-      github: "https://github.com/your-username/project-two",
-      description:
-        "Another project. Keep descriptions to two or three sentences so the slide stays balanced.",
+        "Typo Detection AI , helps detect typos in pdfs with full lnaguage support and multi-language documents",
       aiLabel: "Vibe Coded",
       preview: {
-        type: "image",
-        src: "public/images/project-three.png",
+        type: "video",
+        src: "PJ-3.mp4",
       },
-      Themes: "Mobile Development, Web Development, Ai integration",
+      Themes: "desktop application development — Deep Learning",
       stack: {
-        tools: ["git", "docker", "linux"],
-        languages: ["python", "javascript"],
-        frameworks: ["node", "express"],
+        tools: ["git", "github", "huggingface","jupyter"],
+        languages: ["python"],
+        frameworks: ["pytorch", "pyqt"],
       },
     },
+
   ],
+  skills: {
+    technical: [
+      {
+        name: "Web Development",
+        tools: [{ name: "React", icon: "react" }],
+      },
+      {
+        name: "Prompt Engineering",
+        tools: [
+          { name: "Claude", icon: "claude" },
+          { name: "ChatGPT", icon: "openai" },
+        ],
+      },
+      {
+        name: "Back-End Developement",
+        tools: [{ name: "FastAPI", icon: "fastapi" }],
+      },
+      {
+        name: "Mobile Developement",
+        tools: [
+          { name: "flutter", icon: "flutter" },
+          { name: "java", icon: "java" },
+          { name: "XML", icon: "xml" },
+          { name: "Android Studio", icon: "androidStudio" },
+        ],
+      },
+
+      {
+        name: "CI/CD",
+        tools: [
+          { name: "Github", icon: "github" },
+          { name: "Netlify", icon: "netlify" },
+          { name: "Docker", icon: "docker" },
+        ],
+      },
+      {
+        name: "AI Training and Fine-Tuning",
+        tools: [
+          {name:"Ollama", icon:"ollama"},
+          { name: "Jupyter", icon: "jupyter" },
+          { name: "Pytorch", icon: "pytorch" },
+          { name: "Colab", icon: "colab" },
+          { name: "Python", icon: "python" },
+          { name: "transformers", icon: "huggingface" },
+        ],
+      },
+      {
+        name: "Operating Systems",
+        tools: [
+          { name: "Fedora", icon: "fedora" },
+          { name: "Ubuntu", icon: "ubuntu" },
+          { name: "Win11", icon: "windows" },
+        ],
+      },
+    ],
+    languages: [
+      { name: "English", level: "C1" },
+      { name: "Arabic", level: "Native" },
+      { name: "French", level: "B2" },
+    ],
+  },
 };
 
 export default config;

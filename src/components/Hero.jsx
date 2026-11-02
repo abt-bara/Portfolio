@@ -15,9 +15,12 @@ export default function Hero({ owner }) {
         {/* hidden until the name has finished typing, then fades up */}
         <p className={`description reveal ${done ? 'show' : ''}`}>{owner.description}</p>
 
-        <div className={`reveal ${done ? 'show' : ''}`}>
-          <a href="#projects" className="btn center">
+        <div className={`reveal hero-actions ${done ? 'show' : ''}`}>
+          <a href="#projects" className="btn">
             {owner.buttonLabel ?? 'View projects'} <span aria-hidden="true">↓</span>
+          </a>
+          <a href="#skills" className="btn btn-secondary">
+            {owner.skillsButtonLabel ?? 'Explore skills'} <span aria-hidden="true">↓</span>
           </a>
         </div>
       </div>
