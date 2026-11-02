@@ -8,9 +8,7 @@ const config = {
   owner: {
     name: "Muhammad Bara Harrath", // ★ typed out in the hero
     // ★ shown under the name
-    description:
-      "\‟ A Practicing Muslim, A Hardworking Developer, An Ambitious Individual & a linux (fedora) User \‟ ",
-    buttonLabel: "Take A Look At My Projects",
+        buttonLabel: "Take A Look At My Projects",
     skillsButtonLabel: "Explore skills",
   },
 
@@ -26,7 +24,7 @@ const config = {
       aiLabel: "AI assistance",
       preview: {
         type: "video",
-        src: "assets/videos/PJ-1.mp4",
+        src: "PJ-1.mp4",
       }, // optional: 'images/project-one.png' (file lives in /public/images)
       stack: {
         tools: [
@@ -53,7 +51,7 @@ const config = {
           "fastapi",
           "sqlalchemy",
           "alembic",
-          "reactrouter",
+          "reactRouter",
         ], //               column 3: libraries & frameworks
       },
     },
@@ -66,7 +64,7 @@ const config = {
       aiLabel: "Vibe Coded",
       preview: {
         type: "video",
-        src: "assets/videos/PJ-2.mp4",
+        src: "PJ-2.mp4",
       },
       Themes: "Web development ",
       stack: {
@@ -84,42 +82,22 @@ const config = {
       aiLabel: "Vibe Coded",
       preview: {
         type: "video",
-        src: "assets/videos/PJ-3.mp4",
+        src: "PJ-3.mp4",
       },
-      Themes: "Mobile Development",
+      Themes: "desktop application development — Deep Learning",
       stack: {
-        tools: ["git", "github", "huggingface"],
+        tools: ["git", "github", "huggingface","jupyter"],
         languages: ["python"],
-        frameworks: ["Pytorch", "transformers", "Pyqt"],
+        frameworks: ["pytorch", "pyqt"],
       },
     },
-    {
-      id: "project-four",
-      name: "",
-      github: "https://github.com/your-username/project-two",
-      description:
-        "Another project. Keep descriptions to two or three sentences so the slide stays balanced.",
-      aiLabel: "Vibe Coded",
-      preview: {
-        type: "image",
-        src: "assets/images/PJ-3.jpg",
-      },
-      Themes: "Mobile Development, Web Development, Ai integration",
-      stack: {
-        tools: ["git", "docker", "linux"],
-        languages: ["python", "javascript"],
-        frameworks: ["node", "express"],
-      },
-    },
+
   ],
   skills: {
     technical: [
       {
         name: "Web Development",
-        tools: [
-          { name: "React", icon: "react" },
-          { name: "Vite", icon: "vite" },
-        ],
+        tools: [{ name: "React", icon: "react" }],
       },
       {
         name: "Prompt Engineering",
@@ -130,10 +108,7 @@ const config = {
       },
       {
         name: "Back-End Developement",
-        tools: [
-          { name: "Claude", icon: "claude" },
-          { name: "ChatGPT", icon: "openai" },
-        ],
+        tools: [{ name: "FastAPI", icon: "fastapi" }],
       },
       {
         name: "Mobile Developement",
@@ -141,24 +116,35 @@ const config = {
           { name: "flutter", icon: "flutter" },
           { name: "java", icon: "java" },
           { name: "XML", icon: "xml" },
-          { name: "Android Studio", icon: "android-studio" },
+          { name: "Android Studio", icon: "androidStudio" },
         ],
       },
+
       {
         name: "CI/CD",
         tools: [
           { name: "Github", icon: "github" },
           { name: "Netlify", icon: "netlify" },
+          { name: "Docker", icon: "docker" },
         ],
       },
       {
         name: "AI Training and Fine-Tuning",
         tools: [
+          {name:"Ollama", icon:"ollama"},
           { name: "Jupyter", icon: "jupyter" },
           { name: "Pytorch", icon: "pytorch" },
           { name: "Colab", icon: "colab" },
           { name: "Python", icon: "python" },
           { name: "transformers", icon: "huggingface" },
+        ],
+      },
+      {
+        name: "Operating Systems",
+        tools: [
+          { name: "Fedora", icon: "fedora" },
+          { name: "Ubuntu", icon: "ubuntu" },
+          { name: "Win11", icon: "windows" },
         ],
       },
     ],
